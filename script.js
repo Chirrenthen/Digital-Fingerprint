@@ -5,10 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Screen Resolution
   document.getElementById("resolution").textContent = `${window.screen.width}x${window.screen.height}`;
 
-  // CPU Architecture
-  const cpu = navigator.userAgentData?.platform || navigator.platform;
-  document.getElementById("cpu").textContent = cpu;
-
   // Browser Information
   const browser = navigator.userAgentData?.brands?.[0]?.brand || navigator.userAgent;
   document.getElementById("browser").textContent = browser;
