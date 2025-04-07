@@ -1,3 +1,4 @@
+alert("Code written with 🩵 by Chirrenthen \n This tool automatically access your device and network info and displays them \It also downloads the details in a neat file..")
 document.addEventListener("DOMContentLoaded", () => {
   const loader = document.getElementById("loader");
   const infoDiv = document.getElementById("info");
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Create formatted text file
       const fileContent = `
 ===================================================
-               DEVICE INFORMATION REPORT
+               DEVICE INFORMATION REPORT 
 ===================================================
 
 1. NETWORK DETAILS
@@ -51,7 +52,6 @@ Google Maps Link    : "https://www.google.com/maps?q=${data.latitude},${data.lon
 ---------------------------------------------------
 Browser             : ${browser}
 Operating System    : ${os}
-CPU Architecture    : ${cpu}
 Screen Resolution   : ${window.screen.width}x${window.screen.height}
 
 3. INSTALLED PLUGINS
@@ -59,7 +59,7 @@ Screen Resolution   : ${window.screen.width}x${window.screen.height}
 ${Array.from(plugins).map(p => p.name).join(", ")}
 
 ===================================================
-            REPORT GENERATED AUTOMATICALLY
+            REPORT GENERATED AUTOMATICALLY BY Digital Fingerprint | Chirrenthen
 ===================================================
       `.trim();
 
